@@ -1,0 +1,28 @@
+<script lang="ts">
+</script>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<style>
+    @font-face {
+        font-family: Glacial;
+        src: url("$fonts/GlacialIndifference-Regular.otf") format("opentype");
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav a{
+        font-family: Glacial;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: black;
+    }
+
+</style>
