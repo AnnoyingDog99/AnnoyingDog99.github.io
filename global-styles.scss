@@ -1,0 +1,54 @@
+$main-gradient-opaque: linear-gradient(to right, rgba(55, 137, 230, 0.253), rgba(106, 104, 191, 0.253));
+$main-gradient: linear-gradient(45deg, #3789e6, #6a68bf);
+
+$background-color: #323647;
+$navbar-color: #191b24;
+$navbar-color-opaque: rgba(25, 27, 36, 0.75);
+
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url('/fonts/Quicksand.ttf');
+}
+
+@font-face {
+	font-family: 'Glacial';
+	src: url('/fonts/Glacial.otf');
+}
+
+
+//breakpoints, mobile first
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+@mixin sm {
+	@media (min-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media (min-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+
+@mixin xl {
+	@media (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+@mixin rwd($screen) {
+	@media (min-width: ($screen + 'px')) {
+		@content;
+	}
+}
