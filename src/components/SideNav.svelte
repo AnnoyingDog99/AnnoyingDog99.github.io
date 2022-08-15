@@ -2,11 +2,17 @@
     import { fly } from 'svelte/transition';
     import NavBarElement from "$components/NavBarElement.svelte";
 
-    export let visible = false;
+    import { visible } from '$stores/sideBarStore';
+
+    let isVisible: boolean;
+
+    visible.subscribe((value: boolean) => {
+        isVisible = value;
+    });
     
 </script>
 
-{#if visible}
+{#if isVisible}
     <nav transition:fly="{{ x: -300, duration: 1000 }}">
         <ul>
             <NavBarElement path={"/"}>Home</NavBarElement>

@@ -7,12 +7,10 @@
 
 	import { onMount } from 'svelte';
 
-	let visible: boolean;
-	let loading = true;
+	import { toggleVisible } from '$utils/toggleVisible';
 
-	function toggleVisible() {
-		visible = !visible;
-	}
+
+	let loading = true;
 
 	async function sleep(time:number) {
 		new Promise(resolve => setTimeout(resolve, time));
@@ -31,7 +29,7 @@
 		{#if matches}
 			<NavBar />
 		{:else}
-			<SideNav bind:visible />
+			<SideNav/>
 			<Hamburger on:click={toggleVisible} />
 		{/if}
 	</MediaQuery>

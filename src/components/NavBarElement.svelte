@@ -2,6 +2,8 @@
 	import { page } from '$app/stores';
 
 	export let path: string;
+
+	import { toggleVisible } from '$utils/toggleVisible';
 </script>
 
 {#if $page.url.pathname === path}
@@ -14,7 +16,7 @@
 		<div class="current"/>
 	</div>
 {:else}
-		<a href={path}>
+		<a href={path} on:click={toggleVisible}>
 			<li>
 				<slot/>
 			</li>
