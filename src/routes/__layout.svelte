@@ -9,27 +9,23 @@
 
 	import { toggleVisible } from '$utils/toggleVisible';
 
-
 	let loading = true;
 
-	async function sleep(time:number) {
-		new Promise(resolve => setTimeout(resolve, time));
-	}
-
-	// onMount(() => {
-	// 	await sleep(5000);
-	// 	loading = false;
-	// });
-
-
+	onMount(() => {
+		loading = false;
+	});
 </script>
 
 {#if loading}
+	<div class="spinner">
+		<Spinner />
+	</div>
+{:else}
 	<MediaQuery query="(min-width: 576px)" let:matches>
 		{#if matches}
 			<NavBar />
 		{:else}
-			<SideNav/>
+			<SideNav />
 			<Hamburger on:click={toggleVisible} />
 		{/if}
 	</MediaQuery>
@@ -37,32 +33,22 @@
 	<div class="content">
 		<slot />
 	</div>
-
-{:else}
-<div class="spinner">
-	<Spinner/>
-</div>
 {/if}
 
 <style lang="scss">
 	:global(body) {
+		overflow-y: scroll;
 		margin: 0;
 		padding: 0;
 		background-color: $background-color;
 		font-family: Glacial;
 		color: white;
-		overflow: hidden;
 	}
 
-	.content {
-		overflow-y: auto;
-		max-height: 95vh;
-	}
-
-	.spinner{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+	.spinner {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 </style>

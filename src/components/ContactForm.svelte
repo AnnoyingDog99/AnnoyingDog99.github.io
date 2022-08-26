@@ -1,37 +1,70 @@
 <script lang="ts">
 	import Input from '$components/Input.svelte';
-    import Button from '$components/Button.svelte';
-import MediaQuery from './utilComponents/MediaQuery.svelte';
+	import Button from '$components/Button.svelte';
+
+	export let title = 'Leave a message!';
+
+	let name = '';
+	let email = '';
+	let message = '';
+	let subject = '';
+
+	function submit(e: Event) {
+		e.preventDefault();
+		fetch(
+			'https://script.google.com/macros/s/AKfycbwhA1JpQS2SBQoLeXhYMzizbBeDIglXCE5GB02m7Q_jOsGzLOCjNIWU_JUfL6MW9UbATA/exec',
+			{
+				method: 'POST',
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+				body: `name=${name}&email=${email}&message=${message}&subject=${subject}`
+			}
+		);
+	}
 </script>
 
-<form>
+<form class="gform" method="POST" data-email="jan.vlasman99+portfolio@gmail.com" on:submit={submit}>
 	<div class="container">
-        <div class="text">
-            <Input inputType="text" label="Name:" />
-            <Input inputType="email" label="Email" />
-            <Input inputType="text" label="Subject" />
-            <Input textarea={true} label="Message" />
-        </div>
-        <Button width="80%" type="submit">Send</Button>
+		<h1>{title}</h1>
+		<div class="stripe" />
+		<div class="text">
+			<Input label="Name:" name="name" bind:value={name} />
+			<Input label="Email" name="email" bind:value={email} />
+			<Input label="Subject" name="subject" bind:value={subject} />
+			<Input textarea={true} label="Message" name="message" bind:value={message} />
+			<Button width="100%" type="submit">Send</Button>
+		</div>
 	</div>
 </form>
 
 <style lang="scss">
-    .container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
 
-    .text{
-        margin-bottom: 1rem;
-        width: 80%;
-    }
-    form{
-        width: 100%;
-        max-width: 900px;
-    }
+	.text {
+		margin-bottom: 1rem;
+		width: 80%;
+	}
+	form {
+		width: 100%;
+		max-width: 900px;
+	}
 
+	.stripe {
+		width: 80%;
+		border-radius: 40em;
+		height: 3px;
+		background: $main-gradient;
+		margin-bottom: 1rem;
+	}
+
+	h1 {
+		font-size: 2.2rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
 </style>

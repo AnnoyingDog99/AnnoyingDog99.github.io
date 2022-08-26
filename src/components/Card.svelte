@@ -34,7 +34,7 @@
 		<div class="button-container">
 			<Button width="40%" link={cardInfo.githubLink}>Github</Button>
 			{#if cardInfo.liveLink}
-				<Button width="40%" link={cardInfo.liveLink}>Live</Button>  
+				<Button width="40%" link={cardInfo.liveLink}>Live</Button>
 			{/if}
 		</div>
 	</div>
@@ -62,7 +62,7 @@
 	.content-container {
 		display: flex;
 		justify-content: center;
-        align-items: center;
+		align-items: center;
 		text-align: center;
 		flex-wrap: wrap;
 		color: white;
@@ -72,8 +72,8 @@
 	.button-container {
 		width: 100%;
 		display: flex;
-        text-align: center;
-        align-items: center;
+		text-align: center;
+		align-items: center;
 		justify-content: center;
 	}
 

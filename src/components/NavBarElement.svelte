@@ -6,50 +6,44 @@
 	import { toggleVisible } from '$utils/toggleVisible';
 </script>
 
-{#if $page.url.pathname === path}
-	<div class="container">
-			<a href={path}>
-				<li>
-					<slot/>
-				</li>
-			</a>
-		<div class="current"/>
+<a href={path} on:click={toggleVisible}>
+	<div class="link-text">
+		<li>
+			<slot />
+		</li>
 	</div>
-{:else}
-		<a href={path} on:click={toggleVisible}>
-			<li>
-				<slot/>
-			</li>
-		</a>
-{/if}
+	{#if $page.url.pathname === path}
+		<div class="current" />
+	{/if}
+</a>
 
 <style lang="scss">
-	li {
+	a {
 		color: white;
+		text-decoration: none;
+		width: 100%;
+		background: $navbar-color;
+		&:hover,
+		&:focus {
+			background: $main-gradient-opaque;
+			outline: none;
+		}
 	}
 
-	a {
+	.link-text {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
 		height: 2.5em;
-		background: $navbar-color;
 		text-decoration: none;
 		color: inherit;
 		font-size: 1.2em;
-		&:hover {
-			background: $main-gradient-opaque;
-		}
 	}
 
 	.current {
 		width: 100%;
 		height: 3px;
 		background: $main-gradient;
-	}
-
-	.container {
-		width: 100%;
 	}
 </style>
