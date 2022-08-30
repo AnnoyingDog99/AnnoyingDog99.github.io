@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Input from '$components/Input.svelte';
 	import Button from '$components/Button.svelte';
+	import Spinner from '$components/Spinner.svelte';
 
 	export let title = 'Leave a message!';
 
@@ -9,8 +10,11 @@
 	let message = '';
 	let subject = '';
 
+	let waiting = false;
+
 	function submit(e: Event) {
 		e.preventDefault();
+		waiting = true;
 		fetch(
 			'https://script.google.com/macros/s/AKfycbwhA1JpQS2SBQoLeXhYMzizbBeDIglXCE5GB02m7Q_jOsGzLOCjNIWU_JUfL6MW9UbATA/exec',
 			{
@@ -18,25 +22,49 @@
 				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 				body: `name=${name}&email=${email}&message=${message}&subject=${subject}`
 			}
-		);
+		)
+			.then((response) => response.json())
+			.then(() => {
+				waiting = false;
+				alert('Thank you for your message!');
+			})
+			.catch(() => {
+				waiting = false;
+				alert('Error sending message');
+			});
 	}
 </script>
 
-<form class="gform" method="POST" data-email="jan.vlasman99+portfolio@gmail.com" on:submit={submit}>
-	<div class="container">
-		<h1>{title}</h1>
-		<div class="stripe" />
-		<div class="text">
-			<Input label="Name:" name="name" bind:value={name} />
-			<Input label="Email" name="email" bind:value={email} />
-			<Input label="Subject" name="subject" bind:value={subject} />
-			<Input textarea={true} label="Message" name="message" bind:value={message} />
-			<Button width="100%" type="submit">Send</Button>
+{#if waiting}
+	<Spinner />
+{:else}
+	<form
+		class="gform"
+		method="POST"
+		data-email="jan.vlasman99+portfolio@gmail.com"
+		on:submit={submit}
+	>
+		<div class="container">
+			<h1>{title}</h1>
+			<div class="stripe" />
+			<div class="text">
+				<Input label="Name:" name="name" bind:value={name} />
+				<Input label="Email" name="email" bind:value={email} />
+				<Input label="Subject" name="subject" bind:value={subject} />
+				<Input textarea={true} label="Message" name="message" bind:value={message} />
+				<div class="button-container">
+					<Button width="100%" type="submit">Send</Button>
+				</div>
+			</div>
 		</div>
-	</div>
-</form>
+	</form>
+{/if}
 
 <style lang="scss">
+	.button-container {
+		margin-top: 2em;
+	}
+
 	.container {
 		display: flex;
 		flex-wrap: wrap;

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Resume from '../../static/files/Resume.pdf';
+	import Resume from '../../static/files/Resume-Dark.pdf';
 
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';

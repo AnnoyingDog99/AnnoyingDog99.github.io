@@ -2,10 +2,11 @@
 	export let width = '20em';
 	export let link = '';
 	export let type = '';
+	export let target = '';
 </script>
 
 {#if link !== ''}
-	<a href={link} style:width>
+	<a href={link} style:width {target}>
 		<slot />
 	</a>
 {:else}
@@ -26,8 +27,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-top: 2em;
 		padding: 5px;
+		text-decoration: none;
 
 		border: 10px solid;
 		border-image-slice: 1;

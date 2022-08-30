@@ -32,9 +32,9 @@
 			</p>
 		</div>
 		<div class="button-container">
-			<Button width="40%" link={cardInfo.githubLink}>Github</Button>
+			<Button width="40%" link={cardInfo.githubLink} target="_blank">Github</Button>
 			{#if cardInfo.liveLink}
-				<Button width="40%" link={cardInfo.liveLink}>Live</Button>
+				<Button width="40%" link={cardInfo.liveLink} target="_blank">Live</Button>
 			{/if}
 		</div>
 	</div>
@@ -74,7 +74,7 @@
 		display: flex;
 		text-align: center;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-around;
 	}
 
 	p {
