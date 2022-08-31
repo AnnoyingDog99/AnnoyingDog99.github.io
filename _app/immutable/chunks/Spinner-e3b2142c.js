@@ -1,1 +1,0 @@
-import{S as r,i,s as o,e as c,c as h,a as p,d as a,b as _,g as d,E as s}from"./index-19ddfbb4.js";function m(n){let e;return{c(){e=c("div"),this.h()},l(t){e=h(t,"DIV",{class:!0}),p(e).forEach(a),this.h()},h(){_(e,"class","loader svelte-8plmja")},m(t,l){d(t,e,l)},p:s,i:s,o:s,d(t){t&&a(e)}}}class v extends r{constructor(e){super(),i(this,e,null,m,o,{})}}export{v as S};
