@@ -11,12 +11,12 @@ $navbar-color-opaque: rgba(25, 27, 36, 0.75);
 
 @font-face {
 	font-family: 'Quicksand';
-	src: url('/fonts/Quicksand.ttf');
+	src: url('./Quicksand-99ed40a3.ttf');
 }
 
 @font-face {
 	font-family: 'Glacial';
-	src: url('/fonts/Glacial.otf');
+	src: local('Glacial'), url('./Glacial-de1eddf3.otf');
 }
 
 //breakpoints, mobile first
