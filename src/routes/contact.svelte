@@ -11,6 +11,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Contact</title>
+</svelte:head>
+
 {#if visible}
 	<div class="container" in:fade={{ delay: 100 }}>
 		<ContactForm />

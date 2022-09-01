@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Resume from '../../static/files/Resume-Dark.pdf';
-
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
 
@@ -11,9 +9,13 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Resume</title>
+</svelte:head>
+
 {#if visible}
 	<div in:fade={{ delay: 250 }}>
-		<iframe src={Resume} width="100%" height="100" title="resume" class="iframe">
+		<iframe src="/files/Resume-Dark.pdf" width="100%" height="100" title="resume" class="iframe">
 			Browser does not support iframes
 		</iframe>
 	</div>

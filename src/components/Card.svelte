@@ -1,9 +1,8 @@
 <script lang="ts">
 	import Button from '$components/Button.svelte';
 	import Pill from './Pill.svelte';
-	import type { CardProps } from '../types/Card';
+	import type { CardProps } from '$types/Card';
 
-	// export let cardInfo: CardProps;
 	export let cardInfo: CardProps;
 	let fileExt = cardInfo.imageRoute.split('.').pop();
 </script>

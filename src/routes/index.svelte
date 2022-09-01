@@ -2,7 +2,6 @@
 	import Button from '$components/Button.svelte';
 	import Circle from '$components/Circle.svelte';
 	import MediaQuery from '$components/utilComponents/MediaQuery.svelte';
-	import GithubLogo from '../../static/images/GithubWhite.png';
 
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
@@ -14,6 +13,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
 {#if visible}
 	<div class="center" in:fade={{ delay: 100 }}>
 		<MediaQuery query="(min-width: 768px)" let:matches>
@@ -24,7 +27,9 @@
 						<h1>Jan Vlasman</h1>
 						<h2>Software Engineer</h2>
 						<div>
-							<a href="https://github.com/AnnoyingDog99"><img src={GithubLogo} alt="Github" /></a>
+							<a href="https://github.com/AnnoyingDog99"
+								><img src="/images/GithubWhite.png" alt="Github" /></a
+							>
 							<Button width="50%" link="/contact">Contact me!</Button>
 						</div>
 					</div>

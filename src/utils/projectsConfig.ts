@@ -1,17 +1,9 @@
 import type { CardProps } from 'src/types/Card';
-import Gboggle from '../../static/images/GBoggle/Game.png';
-import Gengine from '../../static/images/GEngine/Vulkan.png';
-import Badminton from '../../static/images/Badminton/MatchEnd.png';
-import Ragkar from '../../static/videos/Ragkar/RagkarDemo.mp4';
-import Ecologic from '../../static/videos/Ecologic/EcologicDemo.mp4';
-import Croma from '../../static/images/Croma/CromaScreenshot.png';
-import Isala from '../../static/images/Isala/IsalaScreenshot.png';
-import Gstain from '../../static/images/GStain/GStainScreenshot.png';
 
 export const projects: CardProps[] = [];
 
 projects.push({
-	imageRoute: Ragkar,
+	imageRoute: '/videos/Ragkar/RagkarDemo.mp4',
 	imageAlt: 'Image of the "Ragkar"',
 	languages: [
 		'Python',
@@ -32,7 +24,7 @@ projects.push({
 });
 
 projects.push({
-	imageRoute: Ecologic,
+	imageRoute: '/videos/Ecologic/EcologicDemo.mp4',
 	imageAlt: 'Screenshot of Ecologic',
 	languages: ['Unity', 'C#', 'HLSL', 'Shadergraph', 'CG'],
 	projectTitle: 'Ecologic',
@@ -42,7 +34,7 @@ projects.push({
 });
 
 projects.push({
-	imageRoute: Gboggle,
+	imageRoute: '/images/GBoggle/Game.png',
 	imageAlt: 'Gboggle game screen',
 	languages: [
 		'Svelte',
@@ -61,7 +53,7 @@ projects.push({
 });
 
 projects.push({
-	imageRoute: Badminton,
+	imageRoute: '/images/Badminton/MatchEnd.png',
 	imageAlt: 'Darts app screenshot',
 	languages: ['SvelteKit', 'Typescript', 'SCSS', 'Jest', 'HTML', 'Vite'],
 	projectTitle: 'Badminton',
@@ -70,7 +62,7 @@ projects.push({
 });
 
 projects.push({
-	imageRoute: Gengine,
+	imageRoute: '/images/GEngine/Vulkan.png',
 	imageAlt: 'Screenshot render engine',
 	languages: ['Vulkan', 'C++', 'CMake', 'GLSL'],
 	projectTitle: 'Vulkan graphics engine',
@@ -79,7 +71,7 @@ projects.push({
 });
 
 projects.push({
-	imageRoute: Croma,
+	imageRoute: '/images/Croma/CromaScreenshot.png',
 	imageAlt: 'Screenshot robotics website',
 	languages: ['HTML', 'Css', 'Javascript', 'Websockets', 'Python'],
 	projectTitle: 'Robotics website',
@@ -89,7 +81,7 @@ projects.push({
 });
 
 projects.push({
-	imageRoute: Isala,
+	imageRoute: '/images/Isala/isalascreenshot.png',
 	imageAlt: 'Screenshot homepage Isala',
 	languages: ['HTML', 'Css', 'Javascript', 'PHP', 'LDAP', 'MySQL'],
 	projectTitle: 'Isala',
@@ -99,7 +91,7 @@ projects.push({
 });
 
 projects.push({
-	imageRoute: Gstain,
+	imageRoute: '/images/Gstain/gstainscreenshot.png',
 	imageAlt: 'Screenshot Gstain',
 	languages: ['Java', 'Javafx'],
 	projectTitle: 'Gstain',

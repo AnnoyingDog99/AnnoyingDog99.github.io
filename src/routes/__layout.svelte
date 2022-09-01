@@ -4,8 +4,6 @@
 	import SideNav from '$components/SideNav.svelte';
 	import MediaQuery from '$components/utilComponents/MediaQuery.svelte';
 	import Spinner from '$components/Spinner.svelte';
-	import Glacial from "../../static/fonts/Glacial.otf";
-	import Quicksand from "../../static/fonts/Quicksand.ttf";
 
 	import { onMount } from 'svelte';
 
