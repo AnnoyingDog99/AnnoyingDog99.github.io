@@ -2,29 +2,25 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
+		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/_app/immutable/start-5ea7e471.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-b25db010.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-cf3eb687.js">
+		<link rel="modulepreload" href="/_app/immutable/start-716edfba.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index-6cc62582.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons-bb7ef836.js">
 	</head>
 	<body>
 		<div>
 		<script type="module" data-sveltekit-hydrate="45h">
-		import { set_public_env, start } from "/_app/immutable/start-5ea7e471.js";
+			import { start } from "/_app/immutable/start-716edfba.js";
 
-		set_public_env({});
-
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-			paths: {"base":"","assets":""},
-			session: {},
-			route: true,
-			spa: true,
-			trailing_slash: "never",
-			hydrate: null
-		});
-	</script></div>
+			start({
+				env: {},
+				hydrate: null,
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
+				trailing_slash: "never"
+			});
+		</script></div>
 	</body>
 </html>
