@@ -1,15 +1,45 @@
-import type { Point } from "./Point";
+export class Node {
+	private _position: THREE.Vector3;
+	private _kClosest: number;
+	private _neighbours: Node[];
+	private _radius: number;
 
-export class Node{
-    private _point: Point;
-    private _neighbours: Node[];
+	constructor(position: THREE.Vector3, kClosest: number, radius: number) {
+		this._position = position;
+		this._kClosest = kClosest;
+		this._neighbours = [];
+		this._radius = radius;
+	}
 
-    constructor(point: Point){
-        this._point = point;
-        this._neighbours = []
-    }
+	get position() {
+		return this._position;
+	}
 
-    set neighbours(neighbours: Node[]){
-        this._neighbours = neighbours;
-    }
+	set position(position: THREE.Vector3) {
+		this._position = position;
+	}
+
+	get neighbours() {
+		return this._neighbours;
+	}
+
+	set neighbours(neighbours: Node[]) {
+		this._neighbours = neighbours;
+	}
+
+	get radius() {
+		return this._radius;
+	}
+
+	set radius(radius: number) {
+		this._radius = radius;
+	}
+
+	get kClosest() {
+		return this._kClosest;
+	}
+
+	set kClosest(kClosest: number) {
+		this._kClosest = kClosest;
+	}
 }

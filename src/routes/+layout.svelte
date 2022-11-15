@@ -4,10 +4,9 @@
 	import SideNav from '$components/SideNav.svelte';
 	import MediaQuery from '$components/utilComponents/MediaQuery.svelte';
 	import Spinner from '$components/Spinner.svelte';
+	import { toggleVisible } from '$utils/toggleVisible';
 
 	import { onMount } from 'svelte';
-
-	import { toggleVisible } from '$utils/toggleVisible';
 
 	let loading = true;
 
@@ -43,6 +42,10 @@
 		background-color: $background-color;
 		font-family: Glacial;
 		color: white;
+	}
+
+	:global(.canvas-container > .container) {
+		z-index: -1;
 	}
 
 	.spinner {

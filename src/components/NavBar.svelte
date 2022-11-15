@@ -18,5 +18,6 @@
 		margin: 0;
 		display: flex;
 		justify-content: space-around;
+		z-index: 1;
 	}
 </style>
