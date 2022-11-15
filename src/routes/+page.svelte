@@ -2,6 +2,7 @@
 	import Button from '$components/Button.svelte';
 	import Circle from '$components/Circle.svelte';
 	import MediaQuery from '$components/utilComponents/MediaQuery.svelte';
+	import DotsAnimation from '$components/K-nearest/DotsAnimation.svelte';
 
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
@@ -39,6 +40,7 @@
 			{/if}
 		</MediaQuery>
 	</div>
+	<DotsAnimation />
 {/if}
 
 <style lang="scss">
