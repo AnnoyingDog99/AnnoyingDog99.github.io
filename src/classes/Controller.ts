@@ -1,5 +1,6 @@
 import { Node } from './Node';
 import * as THREE from 'three';
+import { Grid } from './Grid';
 
 export class Controller {
 	private static _instance: Controller;
@@ -8,6 +9,7 @@ export class Controller {
 	private _bottomLeft: THREE.Vector3;
 	private _topRight: THREE.Vector3;
 	private _kClosest: number;
+	private _grid: Grid;
 
 	private constructor() {
 		this._nodes = [];
@@ -26,6 +28,10 @@ export class Controller {
 		this._kClosest = kClosest;
 	}
 
+	public generateGrid() {
+		this._grid = new Grid(this._bottomLeft, this._topRight, 10, 5);
+	}
+
 	public generatePoints(amount: number) {
 		this._nodes = [];
 		const RADIUS = 0.5;
@@ -41,14 +47,16 @@ export class Controller {
 		}
 	}
 
+	public addPointsToGrid()
+
 	public update() {
 		this._nodes.forEach((node) => {
 			const neighbours = this._nodes
-				.filter((n) => n !== node)
+				.filter((n) => n !== node) //filter out the node itself
 				.sort((a, b) => {
 					return a.position.distanceTo(node.position) - b.position.distanceTo(node.position);
-				})
-				.slice(0, this._kClosest);
+				}) //sort nodes from closest to farthest
+				.slice(0, this._kClosest); //only keep k closest nodes
 			node.neighbours = neighbours;
 		});
 	}
