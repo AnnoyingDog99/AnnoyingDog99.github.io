@@ -2,11 +2,11 @@
 </script>
 
 <div class="bar">
-	<div class="hamburger-container" on:click>
+	<button class="hamburger-container" on:click>
 		<div class="hamburger-line" />
 		<div class="hamburger-line" />
 		<div class="hamburger-line" />
-	</div>
+	</button>
 </div>
 
 <style lang="scss">
@@ -18,6 +18,11 @@
 	.hamburger-container {
 		cursor: pointer;
 		display: inline-block;
+		background: none;
+		color: inherit;
+		border: none;
+		padding: 0;
+		font: inherit;
 	}
 
 	.hamburger-line {
