@@ -1,8 +1,11 @@
+import type { Cell } from "./Cell";
+
 export class Node {
 	private _position: THREE.Vector3;
 	private _kClosest: number;
 	private _neighbours: Node[];
 	private _radius: number;
+	private _cell: Cell;
 
 	constructor(position: THREE.Vector3, kClosest: number, radius: number) {
 		this._position = position;
@@ -41,5 +44,13 @@ export class Node {
 
 	set kClosest(kClosest: number) {
 		this._kClosest = kClosest;
+	}
+
+	get cell() {
+		return this._cell;
+	}
+
+	set cell(cell: Cell) {		
+		this._cell = cell;
 	}
 }

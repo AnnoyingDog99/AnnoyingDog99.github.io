@@ -26,17 +26,24 @@ export class Grid {
         for (let i = 0; i < this._columns; i++) {
             let rowCells = [];
             for (let j = 0; j < this._rows; j++) {
-                let cellTopRight = new Vector2(this._bottomLeft.x + (cellWidth * (j + 1)), this._topRight.y + (cellHeight * i));
-                let cellBottomLeft = new Vector2(this._bottomLeft.x + (cellWidth * j), this._topRight.y + (cellHeight * (i + 1)));
-                rowCells.push(new Cell(cellTopRight, cellBottomLeft))
+                let cellTopRight = new Vector2(this._bottomLeft.x + (cellWidth * (j + 1)), this._topRight.y - (cellHeight * i));
+                let cellBottomLeft = new Vector2(this._bottomLeft.x + (cellWidth * j), this._topRight.y - (cellHeight * (i + 1)));
+                rowCells.push(new Cell(cellTopRight, cellBottomLeft, j, i))
             }
             this._cells.push(rowCells)
         }
     }
-
     
     public get cells() : Cell[][] {
         return this._cells;
+    }
+
+    public clearGrid(){
+        this._cells.forEach((row) => {
+            row.forEach((cell) => {
+                cell.clearCell();
+            })
+        })
     }
     
 }
