@@ -22,9 +22,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci and test
       - run: npm ci
+      - name: run linter
+      - run: npm run lint
       - name: install playwright browsers
       - run: npx playwright install --with-deps
       - name: run tests
       - run: npm test
+      - run: npm run test:unit
       - run: npm run build
-

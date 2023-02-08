@@ -4,21 +4,20 @@
 	import Spinner from '$components/Spinner.svelte';
 
 	export let title = 'Leave a message!';
-	export let value = "";
+	export let value = '';
 
 	let name = '';
 	let email = '';
 	let message = '';
 	let subject = '';
 
-
 	let waiting = false;
 
 	function submit(e: Event) {
 		e.preventDefault();
 		//check if honeypot empty
-		if(value){
-			window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+		if (value) {
+			window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 			return;
 		}
 		waiting = true;
@@ -61,7 +60,7 @@
 				<Input textarea={true} label="Message" name="message" bind:value={message} />
 				<div class="honey">
 					<label for="honeypot">yummy</label>
-					<input id="honeypot" type="text" name="honeypot" bind:value>
+					<input id="honeypot" type="text" name="honeypot" bind:value />
 				</div>
 				<div class="button-container">
 					<Button width="100%" type="submit">Send</Button>
@@ -107,7 +106,7 @@
 		margin-bottom: 1rem;
 	}
 
-	.honey{
+	.honey {
 		display: none;
 	}
 </style>

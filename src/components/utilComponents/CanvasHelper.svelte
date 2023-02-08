@@ -1,7 +1,6 @@
 <script lang="ts">
 	import * as THREE from 'three';
 	import * as SC from 'svelte-cubed';
-	import type { CameraConfig } from '$types/Camera';
 	import { screenHeight, screenWidth } from '$utils/screenDimensions';
 
 	const boxGeometryFullHeight = new THREE.BoxGeometry(1, screenHeight(-50), 1);
