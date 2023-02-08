@@ -8,4 +8,6 @@ it('adds two numbers', () => {
 	expect(sum(3, 3)).toBe(6);
 	expect(sum(3, 3)).not.toBe(9);
 	expect(sum(3, 3)).not.toBe(0);
+	expect(sum(1, 1)).not.toBe(0);
+
 });
