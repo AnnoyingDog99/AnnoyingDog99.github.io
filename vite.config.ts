@@ -1,8 +1,9 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+
+import { defineConfig } from 'vitest/config';
 import path from 'path';
 
-/** @type {import('vite').UserConfig} */
-const config = {
+export default defineConfig ({
 	plugins: [sveltekit()],
 	server: {
 		fs: {
@@ -17,7 +18,8 @@ const config = {
 			$utils: path.resolve('./src/utils'),
 			$classes: path.resolve('./src/classes')
 		}
-	}
-};
-
-export default config;
+	},
+	test: {
+		include: ['tests/unit/**/*.{test,spec}.{js,ts}']
+	},
+});
