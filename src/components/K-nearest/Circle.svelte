@@ -9,7 +9,7 @@
 	export let node: Node;
 
 	export let position: Position;
-	export let velocity: number = 0.1;
+	export let velocity = 0.1;
 
 	let lines: THREE.Line<THREE.BufferGeometry, THREE.LineBasicMaterial>[] = [];
 
