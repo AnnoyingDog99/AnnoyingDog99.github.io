@@ -8,6 +8,7 @@
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"test": "playwright test",
+		"test:unit": "vitest",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
@@ -33,7 +34,9 @@
 		"svelte-check": "^3.0.1",
 		"svelte-preprocess": "^5.0.0",
 		"tslib": "^2.4.1",
-		"typescript": "^4.9.4"
+		"typescript": "^4.9.4",
+		"vite": "^4.1.1",
+		"vitest": "^0.28.4"
 	},
 	"type": "module",
 	"dependencies": {
