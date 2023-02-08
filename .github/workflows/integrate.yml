@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  pull_request:
+    branches: ['main']
+
+jobs:
+  build:
+    runs_on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [19.x]
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm ci and test
+      - run: npm ci
+      - name: install playwright browsers
+      - run: npx playwright install --with-deps
+      - name: run tests
+      - run: npm test
+      - run: npm run build
+
