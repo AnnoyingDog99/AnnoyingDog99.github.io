@@ -2,7 +2,6 @@
 	import Button from '$components/Button.svelte';
 	import Circle from '$components/Circle.svelte';
 	import MediaQuery from '$components/utilComponents/MediaQuery.svelte';
-	import DotsAnimation from '$components/K-nearest/DotsAnimation.svelte';
 
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
@@ -31,7 +30,7 @@
 							<a href="https://github.com/AnnoyingDog99"
 								><img src="/images/GithubWhite.png" alt="Github" /></a
 							>
-							<Button width="50%" link="/contact">Contact me!</Button>
+							<Button width="50%" link="/contact" type="button">Contact me!</Button>
 						</div>
 					</div>
 				</div>
@@ -40,7 +39,6 @@
 			{/if}
 		</MediaQuery>
 	</div>
-	<DotsAnimation />
 {/if}
 
 <style lang="scss">
