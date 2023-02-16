@@ -1,27 +1,29 @@
-import { ArcRotateCamera, Color4, CreateSphere, Engine, HemisphericLight, Scene, UniversalCamera, Vector3, WebGPUEngine } from "@babylonjs/core";
+import { ArcRotateCamera, Color3, Color4, CreateSphere, Engine, HemisphericLight, MeshBuilder, Scene, UniversalCamera, Vector3, WebGPUEngine } from "@babylonjs/core";
+import { GradientMaterial } from "@babylonjs/materials";
 import { GridMaterial } from "@babylonjs/materials/grid/gridMaterial";
-export class World{
+import { GradientSphere } from "./3D objects/GradientSphere";
+export class World {
     private _canvas: HTMLCanvasElement;
     private _engine;
     private _scene;
-    constructor(canvas: HTMLCanvasElement, webGPUSupported: boolean){
+    constructor(canvas: HTMLCanvasElement, webGPUSupported: boolean) {
         this._canvas = canvas;
-        if(webGPUSupported){
+        if (webGPUSupported) {
             this._engine = new WebGPUEngine(canvas);
-        } else{
+        } else {
             this._engine = new Engine(canvas, true)
         }
         this._scene = new Scene(this._engine);
     }
 
-    public setup(){
+    public setup() {
         this._engine.switchFullscreen;
-        this._scene.clearColor = new Color4(0.9, 0.3, 0.3, 1);
+        this._scene.clearColor = new Color4(0, 0, 0, 0);
         //camera setup
         let camera = new ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 2, new Vector3(0, 0, -20), this._scene);
         camera.setTarget(Vector3.Zero());
         camera.attachControl(this._canvas, true);
-    
+
         //add lightning
         let light = new HemisphericLight("light1", new Vector3(0, 1, 0), this._scene);
         light.intensity = 0.7;
@@ -30,9 +32,18 @@ export class World{
         let material = new GridMaterial("grid", this._scene);
 
         //add sphere
-        let sphere = CreateSphere("sphere1", { segments: 16, diameter: 2 }, this._scene);
-        sphere.position.y = 2;
-        sphere.material = material;
+        // let sphere = CreateSphere("sphere1", { segments: 16, diameter: 2 }, this._scene);
+        // sphere.position.y = 2;
+        // sphere.material = material;
+        // let sphere = new GradientSphere(new Vector3(0, 0, 0), this._scene);
+        let sphere = MeshBuilder.CreateSphere("sphere", { segments: 32, diameter: 2 }, this._scene);
+
+        let gradientMaterial = new GradientMaterial("grad", this._scene);
+        gradientMaterial.topColor = Color3.Red(); // Set the gradient top color
+        gradientMaterial.bottomColor = Color3.Blue(); // Set the gradient bottom color
+        gradientMaterial.offset = 0.25;
+
+        sphere.material = gradientMaterial;
 
         this._engine.runRenderLoop(() => {
             this._scene.render();
