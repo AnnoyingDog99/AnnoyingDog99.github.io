@@ -5,6 +5,7 @@
 	import MediaQuery from '$components/utilComponents/MediaQuery.svelte';
 	import Spinner from '$components/Spinner.svelte';
 	import { toggleVisible } from '$utils/toggleVisible';
+	import Canvas from '$components/Canvas.svelte';
 
 	import { onMount } from 'svelte';
 
@@ -20,6 +21,7 @@
 		<Spinner />
 	</div>
 {:else}
+	<Canvas />
 	<MediaQuery query="(min-width: 576px)" let:matches>
 		{#if matches}
 			<NavBar />
