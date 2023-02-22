@@ -1,19 +1,19 @@
-import { cameraConfig } from '$utils/cameraConfig';
+import type { FreeCamera } from '@babylonjs/core';
 
-export function screenHeight(depth = 0) {
-	const cameraOffset = cameraConfig.position[2];
-	if (depth < cameraOffset) {
+export function screenHeight(camera: FreeCamera, depth = 0) {
+	const cameraOffset = camera.position.z;
+	if (depth > cameraOffset) {
 		depth -= cameraOffset;
 	} else {
 		depth += cameraOffset;
 	}
 
-	const vFOV = (cameraConfig.fov * Math.PI) / 180;
+	const vFOV = camera.fov;
 
 	return 2 * Math.tan(vFOV / 2) * Math.abs(depth);
 }
 
-export function screenWidth(depth = 0) {
-	const height = screenHeight(depth);
-	return height * cameraConfig.aspect;
+export function screenWidth(camera, aspectRatio, depth = 0) {
+	const height = screenHeight(camera, depth);
+	return height * aspectRatio;
 }

@@ -15,12 +15,13 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
+		"@babylonjs/core": "^5.46.0",
+		"@babylonjs/materials": "^5.46.0",
 		"@playwright/test": "^1.29.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-static": "^2.0.0",
 		"@sveltejs/kit": "1.8.3",
 		"@tsconfig/svelte": "^3.0.0",
-		"@types/three": "^0.149.0",
 		"@typescript-eslint/eslint-plugin": "^5.47.1",
 		"@typescript-eslint/parser": "^5.47.1",
 		"eslint": "^8.30.0",
@@ -38,9 +39,5 @@
 		"vite": "^4.1.1",
 		"vitest": "^0.28.4"
 	},
-	"type": "module",
-	"dependencies": {
-		"svelte-cubed": "^0.2.1",
-		"three": "^0.149.0"
-	}
+	"type": "module"
 }
