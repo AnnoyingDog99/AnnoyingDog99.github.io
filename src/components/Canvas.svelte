@@ -22,7 +22,7 @@
 </script>
 
 <canvas bind:this={canvasCtx} />
-<div>content</div>
+<div></div>
 
 <style lang="scss">
 	canvas {
