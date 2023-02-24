@@ -33,7 +33,7 @@
 	}
 
 	div {
-		backdrop-filter: blur(2px);
+		// backdrop-filter: blur(1px);
 		position: fixed;
 		top: 0px;
 		right: 0px;

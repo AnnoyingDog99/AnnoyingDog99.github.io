@@ -37,7 +37,6 @@ export class World {
 		this._gameObjects.forEach((object) => {
 			object.setup();
 		});
-
 		this._engine.runRenderLoop(() => {
 			this.findNeighbours(spheres);
 			this._scene.render();
