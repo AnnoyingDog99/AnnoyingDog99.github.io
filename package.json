@@ -29,7 +29,7 @@
 		"eslint-plugin-svelte3": "^4.0.0",
 		"gh-pages": "^5.0.0",
 		"prettier": "^3.0.0",
-		"prettier-plugin-svelte": "^2.9.0",
+		"prettier-plugin-svelte": "^3.0.0",
 		"sass": "^1.57.1",
 		"svelte": "4.0.3",
 		"svelte-check": "^3.0.1",
