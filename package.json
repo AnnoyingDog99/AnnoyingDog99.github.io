@@ -16,7 +16,7 @@
 	},
 	"devDependencies": {
 		"@babylonjs/core": "^6.10.0",
-		"@babylonjs/materials": "^6.9.0",
+		"@babylonjs/materials": "^7.0.0",
 		"@playwright/test": "^1.29.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-static": "^2.0.2",
