@@ -17,6 +17,9 @@ importers:
       '@playwright/test':
         specifier: ^1.47.2
         version: 1.47.2
+      '@sveltejs/adapter-auto':
+        specifier: 1.0.3
+        version: 1.0.3(@sveltejs/kit@2.6.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8(sass@1.79.3)))(svelte@4.2.19)(vite@5.4.8(sass@1.79.3)))
       '@sveltejs/adapter-static':
         specifier: ^3.0.5
         version: 3.0.5(@sveltejs/kit@2.6.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8(sass@1.79.4)))(svelte@4.2.19)(vite@5.4.8(sass@1.79.4)))
@@ -389,6 +392,11 @@ packages:
     resolution: {integrity: sha512-+lvL/4mQxSV8MukpkKyyvfwhH266COcWlXE/1qxwN08ajovta3459zrjLghYMgDerlzNwLAcFpvU+WWE5y6nAQ==}
     cpu: [x64]
     os: [win32]
+
+  '@sveltejs/adapter-auto@1.0.0-next.91':
+    resolution: {integrity: sha512-U57tQdzTfFINim8tzZSARC9ztWPzwOoHwNOpGdb2o6XrD0mEQwU9DsII7dBblvzg+xCnmd0pw7PDtXz5c5t96w==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.0.0-next.587
 
   '@sveltejs/adapter-static@3.0.5':
     resolution: {integrity: sha512-kFJR7RxeB6FBvrKZWAEzIALatgy11ISaaZbcPup8JdWUdrmmfUHHTJ738YHJTEfnCiiXi6aX8Q6ePY7tnSMD6Q==}
@@ -1674,7 +1682,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.22.5':
     optional: true
 
-  '@sveltejs/adapter-static@3.0.5(@sveltejs/kit@2.6.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8(sass@1.79.4)))(svelte@4.2.19)(vite@5.4.8(sass@1.79.4)))':
+  '@sveltejs/adapter-auto@1.0.0-next.91(@sveltejs/kit@2.6.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8(sass@1.79.3)))(svelte@4.2.19)(vite@5.4.8(sass@1.79.3)))':
     dependencies:
       '@sveltejs/kit': 2.6.1(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.8(sass@1.79.4)))(svelte@4.2.19)(vite@5.4.8(sass@1.79.4))
 
