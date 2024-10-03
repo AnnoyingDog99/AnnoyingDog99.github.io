@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^7.27.0
-        version: 7.27.3
+        specifier: ^7.28.0
+        version: 7.28.0
       '@babylonjs/materials':
         specifier: ^7.27.0
-        version: 7.27.3(@babylonjs/core@7.27.3)
+        version: 7.27.3(@babylonjs/core@7.28.0)
       '@playwright/test':
         specifier: ^1.47.2
         version: 1.47.2
@@ -78,7 +78,7 @@ importers:
         specifier: ^5.4.8
         version: 5.4.8(sass@1.79.4)
       vitest:
-        specifier: ^2.1.2
+        specifier: ^2.1.1
         version: 2.1.2(sass@1.79.4)
 
 packages:
@@ -87,8 +87,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@babylonjs/core@7.27.3':
-    resolution: {integrity: sha512-O+b7b0b5pUrNsOAgSTf7LmjcA2DjCqa4CjloyJ6RKcOLl0FCxIWrcrmlfsgfiN65yDnTER1AYh56BBR/bl7+pQ==}
+  '@babylonjs/core@7.28.0':
+    resolution: {integrity: sha512-SekHo6FvX5pttu7sWeIym/pe2sdBcBBsCvJA2k6gcwtutjWkIwjOXsrjMZHA8OgjMH9TCE2kyY6OKqq+lZKv3g==}
 
   '@babylonjs/materials@7.27.3':
     resolution: {integrity: sha512-/t5yqlib1HQnrFvN69fFEZDlV2kulOapRtDqmxKJI8HipM3ezuVZITi9pqCc8D6+i81pvEXduPwg+YTmy3++9Q==}
@@ -1481,11 +1481,11 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@babylonjs/core@7.27.3': {}
+  '@babylonjs/core@7.28.0': {}
 
-  '@babylonjs/materials@7.27.3(@babylonjs/core@7.27.3)':
+  '@babylonjs/materials@7.27.3(@babylonjs/core@7.28.0)':
     dependencies:
-      '@babylonjs/core': 7.27.3
+      '@babylonjs/core': 7.28.0
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
