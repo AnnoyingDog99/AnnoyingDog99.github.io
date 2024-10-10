@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^7.29.0
+        specifier: ^7.27.0
         version: 7.29.0
       '@babylonjs/materials':
-        specifier: ^7.27.0
-        version: 7.28.0(@babylonjs/core@7.29.0)
+        specifier: ^7.29.0
+        version: 7.29.0(@babylonjs/core@7.29.0)
       '@playwright/test':
         specifier: ^1.47.2
         version: 1.48.0
@@ -90,8 +90,8 @@ packages:
   '@babylonjs/core@7.29.0':
     resolution: {integrity: sha512-uegeRE4kEjoiW8nXOszMTkz1jlx5ITTTZvDo5xjhPSa0GK9KhZ2IQF0JONEuJgBdJPtplrUXzH8VzqIE8GpY1g==}
 
-  '@babylonjs/materials@7.28.0':
-    resolution: {integrity: sha512-yA+CoM+XEsbi5t8ca6zaOEf/SShOBIg8oyfgyV7njT2vqN58b2GxCa7N5bKgc6eNLFyh9+g7hp3vpS/S3N8ktg==}
+  '@babylonjs/materials@7.29.0':
+    resolution: {integrity: sha512-1/dQj2mxVenN2yAig5l9vDBHSbu0FQkrWnEJDpxsEp4clcExs4nagtSF5X8DOz3GZeVr3+w+/RSebKpVzC2ALQ==}
     peerDependencies:
       '@babylonjs/core': ^7.0.0
 
@@ -1479,7 +1479,7 @@ snapshots:
 
   '@babylonjs/core@7.29.0': {}
 
-  '@babylonjs/materials@7.28.0(@babylonjs/core@7.29.0)':
+  '@babylonjs/materials@7.29.0(@babylonjs/core@7.29.0)':
     dependencies:
       '@babylonjs/core': 7.29.0
 
