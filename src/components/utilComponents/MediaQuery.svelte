@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	export let query:
-		| '(min-width: 576px)'
+		'(min-width: 576px)'
 		| '(min-width: 768px)'
 		| '(min-width: 992px)'
 		| '(min-width: 1200px)';
