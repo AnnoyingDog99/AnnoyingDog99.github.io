@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^7.27.0
-        version: 7.32.3
+        specifier: ^7.32.4
+        version: 7.32.4
       '@babylonjs/materials':
-        specifier: ^7.32.3
-        version: 7.32.3(@babylonjs/core@7.32.3)
+        specifier: ^7.27.0
+        version: 7.32.3(@babylonjs/core@7.32.4)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.1.0
@@ -36,10 +36,10 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.13.0
+        specifier: ^8.7.0
         version: 8.13.0(@typescript-eslint/parser@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(typescript@5.6.3)
       '@typescript-eslint/parser':
-        specifier: ^8.13.0
+        specifier: ^8.7.0
         version: 8.13.0(eslint@9.14.0)(typescript@5.6.3)
       eslint:
         specifier: ^9.11.1
@@ -90,8 +90,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@babylonjs/core@7.32.3':
-    resolution: {integrity: sha512-pHaF5W2fZoCQ7NuBxqCx+xkhnvArUrz3N0HSZOmg1S357vt91P/yihEmhW1XjoIylmZTg2a/vsIxYr2H76okPA==}
+  '@babylonjs/core@7.32.4':
+    resolution: {integrity: sha512-SoM2nBwxQ7uGovq7rSRGj8u3UqxDvERJXs3Nwj0hVDoe/AqEcgR82Qxy5dO4MJj0GZdfKm95dWhZc4EApVFKfQ==}
 
   '@babylonjs/materials@7.32.3':
     resolution: {integrity: sha512-wG3kmBLUA1E8OYVJ70MVxBOVXkwNNLLMKj/epboRxr7RP5xtlIhoNKXGu7ZnYgbT8LeQqqXie7ZIpjdqSTuTAg==}
@@ -1555,11 +1555,11 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@babylonjs/core@7.32.3': {}
+  '@babylonjs/core@7.32.4': {}
 
-  '@babylonjs/materials@7.32.3(@babylonjs/core@7.32.3)':
+  '@babylonjs/materials@7.32.3(@babylonjs/core@7.32.4)':
     dependencies:
-      '@babylonjs/core': 7.32.3
+      '@babylonjs/core': 7.32.4
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
