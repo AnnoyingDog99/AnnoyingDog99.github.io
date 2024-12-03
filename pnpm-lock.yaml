@@ -66,8 +66,8 @@ importers:
         specifier: 5.5.0
         version: 5.5.0
       svelte-check:
-        specifier: ^4.0.4
-        version: 4.1.0(svelte@5.5.0)(typescript@5.7.2)
+        specifier: ^4.1.1
+        version: 4.1.1(svelte@5.5.0)(typescript@5.7.2)
       svelte-preprocess:
         specifier: ^6.0.3
         version: 6.0.3(postcss-load-config@3.1.4(postcss@8.4.49))(postcss@8.4.49)(sass@1.81.1)(svelte@5.5.0)(typescript@5.7.2)
@@ -1478,8 +1478,8 @@ packages:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
 
-  svelte-check@4.1.0:
-    resolution: {integrity: sha512-AflEZYqI578KuDZcpcorPSf597LStxlkN7XqXi38u09zlHODVKd7c+7OuubGzbhgGRUqNTdQCZ+Ga96iRXEf2g==}
+  svelte-check@4.1.1:
+    resolution: {integrity: sha512-NfaX+6Qtc8W/CyVGS/F7/XdiSSyXz+WGYA9ZWV3z8tso14V2vzjfXviKaTFEzB7g8TqfgO2FOzP6XT4ApSTUTw==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -2955,7 +2955,7 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
-  svelte-check@4.1.0(svelte@5.5.0)(typescript@5.7.2):
+  svelte-check@4.1.1(svelte@5.5.0)(typescript@5.7.2):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 4.0.1
