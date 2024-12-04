@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^7.27.0
-        version: 7.37.0
+        specifier: ^7.37.1
+        version: 7.37.1
       '@babylonjs/materials':
         specifier: ^7.27.0
-        version: 7.37.0(@babylonjs/core@7.37.0)
+        version: 7.37.0(@babylonjs/core@7.37.1)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.2.0
@@ -90,8 +90,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@babylonjs/core@7.37.0':
-    resolution: {integrity: sha512-BwwZqRr35V9rasMoApBn7TDubulzL9g6+96HhEqYiRQYqJ5arZTEdhanmYgNDy5zem4zF/k4srCi7HmWH212Aw==}
+  '@babylonjs/core@7.37.1':
+    resolution: {integrity: sha512-EOG87MlZ0e1HCsClSNoeKmB2alr01V1x9wppJ4kUZ6x/OIbW81jVff/Rye0/zttBzfisna+bE5BxIizIjtpSGg==}
 
   '@babylonjs/materials@7.37.0':
     resolution: {integrity: sha512-a8vmj2+2moiaV6pU9IfAa1CMz56ydE5hk4LhvZ4kLpfWCH+lrcApzZKKskBTFIAKBZ1NJzwsKEh99ELiDlJ1NA==}
@@ -1738,11 +1738,11 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@babylonjs/core@7.37.0': {}
+  '@babylonjs/core@7.37.1': {}
 
-  '@babylonjs/materials@7.37.0(@babylonjs/core@7.37.0)':
+  '@babylonjs/materials@7.37.0(@babylonjs/core@7.37.1)':
     dependencies:
-      '@babylonjs/core': 7.37.0
+      '@babylonjs/core': 7.37.1
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
