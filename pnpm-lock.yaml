@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^7.27.0
-        version: 7.40.0
+        specifier: ^7.40.1
+        version: 7.40.1
       '@babylonjs/materials':
-        specifier: ^7.40.0
-        version: 7.40.0(@babylonjs/core@7.40.0)
+        specifier: ^7.27.0
+        version: 7.40.0(@babylonjs/core@7.40.1)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.2.0
@@ -30,7 +30,7 @@ importers:
         specifier: 2.10.1
         version: 2.10.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.2)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.2)(vite@6.0.3(sass@1.82.0))
       '@sveltejs/vite-plugin-svelte':
-        specifier: ^5.0.2
+        specifier: ^5.0.0
         version: 5.0.2(svelte@5.11.2)(vite@6.0.3(sass@1.82.0))
       '@tsconfig/svelte':
         specifier: ^5.0.4
@@ -90,8 +90,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@babylonjs/core@7.40.0':
-    resolution: {integrity: sha512-ntXO5zsAPcoDErzI4TAXEhdUWcEDbrVjoZh33DLHBIKpbN27rHHLsB/W5e6sMz8zf5z6wNLVP03Jfr1R9B0OLw==}
+  '@babylonjs/core@7.40.1':
+    resolution: {integrity: sha512-qdvU95uSPR2XokIw24WoEzAKCk7O1rFNt7cXQ72PijltBQmJZ52OrZlrsYAfz4Ck54yggfhCEcnIDDIfMivJlA==}
 
   '@babylonjs/materials@7.40.0':
     resolution: {integrity: sha512-ihTdQ6rDvHnGsbRCohZMQNoLdzeohjQCrhTSMNUehSPGJf9u2PTsDhB9AhJylrCewHMxULmgYYTCNgNwFeGz0g==}
@@ -1735,11 +1735,11 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@babylonjs/core@7.40.0': {}
+  '@babylonjs/core@7.40.1': {}
 
-  '@babylonjs/materials@7.40.0(@babylonjs/core@7.40.0)':
+  '@babylonjs/materials@7.40.0(@babylonjs/core@7.40.1)':
     dependencies:
-      '@babylonjs/core': 7.40.0
+      '@babylonjs/core': 7.40.1
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
