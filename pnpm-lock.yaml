@@ -12,7 +12,7 @@ importers:
         specifier: ^7.27.0
         version: 7.40.1
       '@babylonjs/materials':
-        specifier: ^7.40.1
+        specifier: ^7.27.0
         version: 7.40.1(@babylonjs/core@7.40.1)
       '@eslint/eslintrc':
         specifier: ^3.1.0
@@ -22,13 +22,13 @@ importers:
         version: 1.49.1
       '@sveltejs/adapter-auto':
         specifier: 3.3.1
-        version: 3.3.1(@sveltejs/kit@2.10.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))
+        version: 3.3.1(@sveltejs/kit@2.11.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))
       '@sveltejs/adapter-static':
         specifier: ^3.0.5
-        version: 3.0.6(@sveltejs/kit@2.10.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))
+        version: 3.0.6(@sveltejs/kit@2.11.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))
       '@sveltejs/kit':
-        specifier: 2.10.1
-        version: 2.10.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0))
+        specifier: 2.11.1
+        version: 2.11.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.0.0
         version: 5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0))
@@ -654,8 +654,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/kit@2.10.1':
-    resolution: {integrity: sha512-2aormKTn94aU8Lfxj4gcbRGh1Dyw0hCFlNo51+njdRDn9P2ERuWC4bOtTuoy5HJpPYR3AH8oaaEjKDWUHbi1OA==}
+  '@sveltejs/kit@2.11.1':
+    resolution: {integrity: sha512-dAiHDEd+AOm20eYdMPV1a2eKBOc0s/7XsSs7PCoNv2kKS7BAoVRC9uzR+FQmxLtp8xuEo9z8CtrMQoszkThltQ==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -2084,16 +2084,16 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.28.0':
     optional: true
 
-  '@sveltejs/adapter-auto@3.3.1(@sveltejs/kit@2.10.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))':
+  '@sveltejs/adapter-auto@3.3.1(@sveltejs/kit@2.11.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))':
     dependencies:
-      '@sveltejs/kit': 2.10.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0))
+      '@sveltejs/kit': 2.11.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0))
       import-meta-resolve: 4.1.0
 
-  '@sveltejs/adapter-static@3.0.6(@sveltejs/kit@2.10.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))':
+  '@sveltejs/adapter-static@3.0.6(@sveltejs/kit@2.11.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))':
     dependencies:
-      '@sveltejs/kit': 2.10.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0))
+      '@sveltejs/kit': 2.11.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0))
 
-  '@sveltejs/kit@2.10.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0))':
+  '@sveltejs/kit@2.11.1(@sveltejs/vite-plugin-svelte@5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0)))(svelte@5.11.3)(vite@6.0.3(sass@1.82.0))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 5.0.2(svelte@5.11.3)(vite@6.0.3(sass@1.82.0))
       '@types/cookie': 0.6.0
@@ -2102,7 +2102,7 @@ snapshots:
       esm-env: 1.2.1
       import-meta-resolve: 4.1.0
       kleur: 4.1.5
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       mrmime: 2.0.0
       sade: 1.8.1
       set-cookie-parser: 2.7.0
@@ -2229,7 +2229,7 @@ snapshots:
     dependencies:
       '@vitest/spy': 2.1.8
       estree-walker: 3.0.3
-      magic-string: 0.30.14
+      magic-string: 0.30.15
     optionalDependencies:
       vite: 5.4.11(sass@1.82.0)
 
@@ -2245,7 +2245,7 @@ snapshots:
   '@vitest/snapshot@2.1.8':
     dependencies:
       '@vitest/pretty-format': 2.1.8
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       pathe: 1.1.2
 
   '@vitest/spy@2.1.8':
