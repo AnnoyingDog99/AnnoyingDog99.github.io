@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^7.42.0
+        specifier: ^7.27.0
         version: 7.42.0
       '@babylonjs/materials':
-        specifier: ^7.27.0
-        version: 7.41.1(@babylonjs/core@7.42.0)
+        specifier: ^7.42.0
+        version: 7.42.0(@babylonjs/core@7.42.0)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.2.0
@@ -93,8 +93,8 @@ packages:
   '@babylonjs/core@7.42.0':
     resolution: {integrity: sha512-OFFF8m/N6dUAfDiljqVZ5DIouBt+TksnWOPB2Sye9KJ5M7U+Zc9vlUrOGtpVSH/rGGQmmAvj7uW7o7C8xda4Gg==}
 
-  '@babylonjs/materials@7.41.1':
-    resolution: {integrity: sha512-S3qckBGkph2iLlEEYpiK2ZG9qeLxUmC0SxHQOborHUIe0dCfIB/88MaKM2D1eqDcxXxz5NfWm1vu07njd3E/HA==}
+  '@babylonjs/materials@7.42.0':
+    resolution: {integrity: sha512-FcHZJQQ0xxIbNnq2LQZaoSBdWmfRUKB/dECFQ0llltOc/LedqvmJNlIcjZuEWlwOAiDeWJQvzPpDluH0tILfFg==}
     peerDependencies:
       '@babylonjs/core': ^7.0.0
 
@@ -1752,7 +1752,7 @@ snapshots:
 
   '@babylonjs/core@7.42.0': {}
 
-  '@babylonjs/materials@7.41.1(@babylonjs/core@7.42.0)':
+  '@babylonjs/materials@7.42.0(@babylonjs/core@7.42.0)':
     dependencies:
       '@babylonjs/core': 7.42.0
 
