@@ -45,11 +45,11 @@ importers:
         specifier: ^9.11.1
         version: 9.21.0
       eslint-config-prettier:
-        specifier: ^10.0.2
+        specifier: ^10.0.0
         version: 10.0.2(eslint@9.21.0)
       eslint-plugin-svelte:
-        specifier: ^3.0.0
-        version: 3.0.1(eslint@9.21.0)(svelte@5.20.4)
+        specifier: ^3.0.2
+        version: 3.0.2(eslint@9.21.0)(svelte@5.20.4)
       gh-pages:
         specifier: ^6.1.1
         version: 6.3.0
@@ -817,8 +817,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-svelte@3.0.1:
-    resolution: {integrity: sha512-jeWRz1qVsnYQ7CBmColD2T/WEuDKuUpaAJdbqwMjXfiVekFyYtTj35zsv3EX2tnX3BHkvm7JHNTJMXFWM470oA==}
+  eslint-plugin-svelte@3.0.2:
+    resolution: {integrity: sha512-+0QglmWNryvXXxRQKzLF3i+AreTsueCw7PBb0nGVBq+F9HoYqAjQeJ/9N6vFAtjMjK3wgsETrLVyBKPdeufN6Q==}
     engines: {node: ^18.20.4 || ^20.18.0 || >=22.10.0}
     peerDependencies:
       eslint: ^8.57.1 || ^9.0.0
@@ -2175,7 +2175,7 @@ snapshots:
     dependencies:
       eslint: 9.21.0
 
-  eslint-plugin-svelte@3.0.1(eslint@9.21.0)(svelte@5.20.4):
+  eslint-plugin-svelte@3.0.2(eslint@9.21.0)(svelte@5.20.4):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.1(eslint@9.21.0)
       '@jridgewell/sourcemap-codec': 1.5.0
