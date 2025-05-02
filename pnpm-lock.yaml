@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.0.0
+        specifier: ^8.5.0
         version: 8.5.0
       '@babylonjs/materials':
         specifier: ^8.0.0
@@ -78,7 +78,7 @@ importers:
         specifier: ^5.6.2
         version: 5.8.3
       vite:
-        specifier: ^6.3.4
+        specifier: ^6.0.0
         version: 6.3.4(sass@1.87.0)
       vitest:
         specifier: ^3.0.0
