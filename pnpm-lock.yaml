@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.0.0
+        specifier: ^8.5.0
         version: 8.5.0
       '@babylonjs/materials':
         specifier: ^8.0.0
