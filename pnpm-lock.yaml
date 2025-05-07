@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.0.0
-        version: 8.6.1
+        specifier: ^8.6.2
+        version: 8.6.2
       '@babylonjs/materials':
         specifier: ^8.0.0
-        version: 8.6.1(@babylonjs/core@8.6.1)
+        version: 8.6.2(@babylonjs/core@8.6.2)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.3.1
@@ -45,7 +45,7 @@ importers:
         specifier: ^9.11.1
         version: 9.26.0
       eslint-config-prettier:
-        specifier: ^10.1.3
+        specifier: ^10.0.0
         version: 10.1.3(eslint@9.26.0)
       eslint-plugin-svelte:
         specifier: ^3.0.0
@@ -90,11 +90,11 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@babylonjs/core@8.6.1':
-    resolution: {integrity: sha512-7/VhqaDPdtav0vGoGJ7XwGGzhcoeY4M3/C4ROsqHdD8lpsFvG94CDzmIRON+FGSB3mOCB59Vs84SPSpW18Unlg==}
+  '@babylonjs/core@8.6.2':
+    resolution: {integrity: sha512-JshRmSYOHVAfcyDeljDT3b7tiXOoYA8W63IZKJWWggT27jePSXsk4MwWbOnm3bqo59n6vkqjhRDnBiTJLbQHag==}
 
-  '@babylonjs/materials@8.6.1':
-    resolution: {integrity: sha512-uq/agEd0ArINlCX3JB5CNAb77AZT5DYuoR4e3QM8OtxcmZKNTNGJl7co4Hf6hWScNwqoq4EGtvMmgbt/ul95OQ==}
+  '@babylonjs/materials@8.6.2':
+    resolution: {integrity: sha512-IN6zATGDLvQLS7d6ZBHQg5ljDwo6g6JPLUzzk5DCN/TNh+FK1Xg1IhwgH+qcSwhmifBe9k1dCc5T9s3vpjIXHw==}
     peerDependencies:
       '@babylonjs/core': ^8.0.0
 
@@ -1855,11 +1855,11 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@babylonjs/core@8.6.1': {}
+  '@babylonjs/core@8.6.2': {}
 
-  '@babylonjs/materials@8.6.1(@babylonjs/core@8.6.1)':
+  '@babylonjs/materials@8.6.2(@babylonjs/core@8.6.2)':
     dependencies:
-      '@babylonjs/core': 8.6.1
+      '@babylonjs/core': 8.6.2
 
   '@esbuild/aix-ppc64@0.25.3':
     optional: true
