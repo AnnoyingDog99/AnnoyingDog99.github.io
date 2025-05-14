@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.0.0
-        version: 8.7.0
+        specifier: ^8.7.1
+        version: 8.7.1
       '@babylonjs/materials':
         specifier: ^8.0.0
-        version: 8.7.0(@babylonjs/core@8.7.0)
+        version: 8.7.1(@babylonjs/core@8.7.1)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.3.1
@@ -57,7 +57,7 @@ importers:
         specifier: ^3.3.3
         version: 3.5.3
       prettier-plugin-svelte:
-        specifier: ^3.4.0
+        specifier: ^3.2.7
         version: 3.4.0(prettier@3.5.3)(svelte@5.28.6)
       sass:
         specifier: ^1.79.4
@@ -90,11 +90,11 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@babylonjs/core@8.7.0':
-    resolution: {integrity: sha512-6yVCq4lidd6B9xnyL2Ubs6v+IX6tHX3SmoMDUrrrIMYUSW/qPIG1qRWs3+3bD9gvTM8A+UY+tcMPsHkaLVnaRA==}
+  '@babylonjs/core@8.7.1':
+    resolution: {integrity: sha512-OmnJLNiF80Fvj5aUvH25/iKMX1L/avtvpaymQJydWABCuw1Q8ANjK6VUdxh4p7dNYpIfmxEAhZxnQeKoGSyi0Q==}
 
-  '@babylonjs/materials@8.7.0':
-    resolution: {integrity: sha512-v2240oEPEPSOsw9cuQva8Q3yBQvFyCfrkgfWXEDL9fJBmUHmylK6pPZZArwIx4gm50azkpltGjRdcK7R6/vScg==}
+  '@babylonjs/materials@8.7.1':
+    resolution: {integrity: sha512-9EtqVQFgiIP86uh8DTAlnFlQ4nWvkVfjmtf0iJoEpP848UvGHFDbdr8u356aFNmZqwOFYLNob/VDTFOT3kpr4A==}
     peerDependencies:
       '@babylonjs/core': ^8.0.0
 
@@ -1850,11 +1850,11 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@babylonjs/core@8.7.0': {}
+  '@babylonjs/core@8.7.1': {}
 
-  '@babylonjs/materials@8.7.0(@babylonjs/core@8.7.0)':
+  '@babylonjs/materials@8.7.1(@babylonjs/core@8.7.1)':
     dependencies:
-      '@babylonjs/core': 8.7.0
+      '@babylonjs/core': 8.7.1
 
   '@esbuild/aix-ppc64@0.25.3':
     optional: true
