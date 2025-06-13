@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.12.1
+        specifier: ^8.0.0
         version: 8.12.1
       '@babylonjs/materials':
         specifier: ^8.0.0
@@ -18,8 +18,8 @@ importers:
         specifier: ^3.1.0
         version: 3.3.1
       '@playwright/test':
-        specifier: ^1.47.2
-        version: 1.52.0
+        specifier: ^1.53.0
+        version: 1.53.0
       '@sveltejs/adapter-auto':
         specifier: 6.0.1
         version: 6.0.1(@sveltejs/kit@2.21.5(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.33.15)(vite@6.3.5(sass@1.89.2)))(svelte@5.33.15)(vite@6.3.5(sass@1.89.2)))
@@ -81,7 +81,7 @@ importers:
         specifier: ^6.0.0
         version: 6.3.5(sass@1.89.2)
       vitest:
-        specifier: ^3.2.3
+        specifier: ^3.0.0
         version: 3.2.3(sass@1.89.2)
 
 packages:
@@ -418,8 +418,8 @@ packages:
     resolution: {integrity: sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg==}
     engines: {node: '>= 10.0.0'}
 
-  '@playwright/test@1.52.0':
-    resolution: {integrity: sha512-uh6W7sb55hl7D6vsAeA+V2p5JnlAqzhqFyF0VcJkKZXkgnFcVG9PziERRHQfPLfNGx1C292a4JqbWzhR8L4R1g==}
+  '@playwright/test@1.53.0':
+    resolution: {integrity: sha512-15hjKreZDcp7t6TL/7jkAo6Df5STZN09jGiv5dbP9A6vMVncXRqE7/B2SncsyOwrkZRBH2i6/TPOL8BVmm3c7w==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1257,13 +1257,13 @@ packages:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
     engines: {node: '>=8'}
 
-  playwright-core@1.52.0:
-    resolution: {integrity: sha512-l2osTgLXSMeuLZOML9qYODUQoPPnUsKsb5/P6LJ2e6uPKXUdPK5WYhN4z03G+YNbWmGDY4YENauNu4ZKczreHg==}
+  playwright-core@1.53.0:
+    resolution: {integrity: sha512-mGLg8m0pm4+mmtB7M89Xw/GSqoNC+twivl8ITteqvAndachozYe2ZA7srU6uleV1vEdAHYqjq+SV8SNxRRFYBw==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.52.0:
-    resolution: {integrity: sha512-JAwMNMBlxJ2oD1kce4KPtMkDeKGHQstdpFPcPH3maElAXon/QZeTvtsfXmTMRyO9TslfoYOXkSsvao2nE1ilTw==}
+  playwright@1.53.0:
+    resolution: {integrity: sha512-ghGNnIEYZC4E+YtclRn4/p6oYbdPiASELBIYkBXfaTVKreQUYbMUYQDwS12a8F0/HtIjr/CkGjtwABeFPGcS4Q==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1875,9 +1875,9 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.5.1
     optional: true
 
-  '@playwright/test@1.52.0':
+  '@playwright/test@1.53.0':
     dependencies:
-      playwright: 1.52.0
+      playwright: 1.53.0
 
   '@polka/url@1.0.0-next.28': {}
 
@@ -2701,11 +2701,11 @@ snapshots:
     dependencies:
       find-up: 4.1.0
 
-  playwright-core@1.52.0: {}
+  playwright-core@1.53.0: {}
 
-  playwright@1.52.0:
+  playwright@1.53.0:
     dependencies:
-      playwright-core: 1.52.0
+      playwright-core: 1.53.0
     optionalDependencies:
       fsevents: 2.3.2
 
