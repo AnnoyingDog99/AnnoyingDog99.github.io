@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.0.0
-        version: 8.21.1
+        specifier: ^8.22.0
+        version: 8.22.0
       '@babylonjs/materials':
         specifier: ^8.0.0
-        version: 8.21.1(@babylonjs/core@8.21.1)
+        version: 8.21.1(@babylonjs/core@8.22.0)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.3.1
@@ -36,10 +36,10 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.39.0
+        specifier: ^8.7.0
         version: 8.39.0(@typescript-eslint/parser@8.39.0(eslint@9.32.0)(typescript@5.8.3))(eslint@9.32.0)(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^8.39.0
+        specifier: ^8.7.0
         version: 8.39.0(eslint@9.32.0)(typescript@5.8.3)
       eslint:
         specifier: ^9.11.1
@@ -66,7 +66,7 @@ importers:
         specifier: 5.38.0
         version: 5.38.0
       svelte-check:
-        specifier: ^4.3.1
+        specifier: ^4.0.4
         version: 4.3.1(picomatch@4.0.2)(svelte@5.38.0)(typescript@5.8.3)
       svelte-preprocess:
         specifier: ^6.0.3
@@ -90,8 +90,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@babylonjs/core@8.21.1':
-    resolution: {integrity: sha512-T9mgjUI5NFW9KleVqQk61RrD119khhRg3fbloo40CQbAct/jQJRps/OxUaMhZEfFyXNWEmj+aRGLjh7Wbtufcg==}
+  '@babylonjs/core@8.22.0':
+    resolution: {integrity: sha512-Tu4C+bG6xKP9sGFU/rEDM6xiUpbzsR9qq4RLaJmIvin5mrggMjFdC6WNu8V8JGISp75qORT0hIC7WwDx9f7Dnw==}
 
   '@babylonjs/materials@8.21.1':
     resolution: {integrity: sha512-X3fB4V+/2pwn7bU31T0LF7hrGWrVYM2SklSrJNfPGj9EGpxIu8DSQ7qlZlwFE33LqxCnqloKyt/dVgVN4Csl7g==}
@@ -1629,11 +1629,11 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.29
 
-  '@babylonjs/core@8.21.1': {}
+  '@babylonjs/core@8.22.0': {}
 
-  '@babylonjs/materials@8.21.1(@babylonjs/core@8.21.1)':
+  '@babylonjs/materials@8.21.1(@babylonjs/core@8.22.0)':
     dependencies:
-      '@babylonjs/core': 8.21.1
+      '@babylonjs/core': 8.22.0
 
   '@esbuild/aix-ppc64@0.25.3':
     optional: true
