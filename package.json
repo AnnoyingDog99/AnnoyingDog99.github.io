@@ -21,7 +21,7 @@
 		"@playwright/test": "^1.47.2",
 		"@sveltejs/adapter-auto": "6.1.0",
 		"@sveltejs/adapter-static": "^3.0.5",
-		"@sveltejs/kit": "2.27.3",
+		"@sveltejs/kit": "2.28.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
 		"@tsconfig/svelte": "^5.0.4",
 		"@typescript-eslint/eslint-plugin": "^8.7.0",
