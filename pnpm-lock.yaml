@@ -12,7 +12,7 @@ importers:
         specifier: ^8.0.0
         version: 8.24.0
       '@babylonjs/materials':
-        specifier: ^8.24.0
+        specifier: ^8.0.0
         version: 8.24.0(@babylonjs/core@8.24.0)
       '@eslint/eslintrc':
         specifier: ^3.1.0
@@ -33,8 +33,8 @@ importers:
         specifier: ^6.0.0
         version: 6.1.3(svelte@5.38.2)(vite@7.1.3(sass@1.90.0))
       '@tsconfig/svelte':
-        specifier: ^5.0.4
-        version: 5.0.4
+        specifier: ^5.0.5
+        version: 5.0.5
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.7.0
         version: 8.40.0(@typescript-eslint/parser@8.40.0(eslint@9.33.0)(typescript@5.9.2))(eslint@9.33.0)(typescript@5.9.2)
@@ -580,8 +580,8 @@ packages:
       svelte: ^5.0.0
       vite: ^6.3.0 || ^7.0.0
 
-  '@tsconfig/svelte@5.0.4':
-    resolution: {integrity: sha512-BV9NplVgLmSi4mwKzD8BD/NQ8erOY/nUE/GpgWe2ckx+wIQF5RyRirn/QsSSCPeulVpc3RA/iJt6DpfTIZps0Q==}
+  '@tsconfig/svelte@5.0.5':
+    resolution: {integrity: sha512-48fAnUjKye38FvMiNOj0J9I/4XlQQiZlpe9xaNPfe8vy2Y1hFBt8g1yqf2EGjVvHavo4jf2lC+TQyENCr4BJBQ==}
 
   '@types/chai@5.2.2':
     resolution: {integrity: sha512-8kB30R7Hwqf40JPiKhVzodJs2Qc1ZJ5zuT3uzw5Hq/dhNCl3G3l83jfpdI1e20BP348+fV7VIL/+FxaXkqBmWg==}
@@ -1989,7 +1989,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tsconfig/svelte@5.0.4': {}
+  '@tsconfig/svelte@5.0.5': {}
 
   '@types/chai@5.2.2':
     dependencies:
