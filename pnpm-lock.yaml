@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.0.0
-        version: 8.26.0
+        specifier: ^8.26.1
+        version: 8.26.1
       '@babylonjs/materials':
         specifier: ^8.0.0
-        version: 8.26.0(@babylonjs/core@8.26.0)
+        version: 8.26.0(@babylonjs/core@8.26.1)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.3.1
@@ -36,10 +36,10 @@ importers:
         specifier: ^5.0.4
         version: 5.0.5
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.43.0
+        specifier: ^8.7.0
         version: 8.43.0(@typescript-eslint/parser@8.43.0(eslint@9.35.0)(typescript@5.9.2))(eslint@9.35.0)(typescript@5.9.2)
       '@typescript-eslint/parser':
-        specifier: ^8.43.0
+        specifier: ^8.7.0
         version: 8.43.0(eslint@9.35.0)(typescript@5.9.2)
       eslint:
         specifier: ^9.11.1
@@ -86,8 +86,8 @@ importers:
 
 packages:
 
-  '@babylonjs/core@8.26.0':
-    resolution: {integrity: sha512-3FeiI4I280lre57yqwbBkTUWfussXz4MT89tOotMstRSDkjC8M/LmoJFjp9Vj0hdWK40E1FxZ56G8YR8vdqdVw==}
+  '@babylonjs/core@8.26.1':
+    resolution: {integrity: sha512-8LkZHmcyjAy+xaVt9pkS3djt0EOymjmrORB8W4fuRPxK1urUfP9zC4QioOeS4Q5e+yD366hSDfc8aNllo/qy6g==}
 
   '@babylonjs/materials@8.26.0':
     resolution: {integrity: sha512-WS5wlSl6HZ5Q/3rjY4r1X5v+DGCQX0KkHZK8dFkO3LxRgbP0MnXZ8H+kcFqz9IP5sWcRUfkHRdRql/NDTkzFJw==}
@@ -1641,11 +1641,11 @@ packages:
 
 snapshots:
 
-  '@babylonjs/core@8.26.0': {}
+  '@babylonjs/core@8.26.1': {}
 
-  '@babylonjs/materials@8.26.0(@babylonjs/core@8.26.0)':
+  '@babylonjs/materials@8.26.0(@babylonjs/core@8.26.1)':
     dependencies:
-      '@babylonjs/core': 8.26.0
+      '@babylonjs/core': 8.26.1
 
   '@esbuild/aix-ppc64@0.25.9':
     optional: true
