@@ -36,10 +36,10 @@ importers:
         specifier: ^5.0.4
         version: 5.0.5
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.46.3
+        specifier: ^8.7.0
         version: 8.46.3(@typescript-eslint/parser@8.46.3(eslint@9.39.0)(typescript@5.9.3))(eslint@9.39.0)(typescript@5.9.3)
       '@typescript-eslint/parser':
-        specifier: ^8.46.3
+        specifier: ^8.7.0
         version: 8.46.3(eslint@9.39.0)(typescript@5.9.3)
       eslint:
         specifier: ^9.11.1
