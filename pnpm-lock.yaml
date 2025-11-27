@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.0.0
-        version: 8.38.0
+        specifier: ^8.39.0
+        version: 8.39.0
       '@babylonjs/materials':
         specifier: ^8.0.0
-        version: 8.38.0(@babylonjs/core@8.38.0)
+        version: 8.38.0(@babylonjs/core@8.39.0)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.3.1
@@ -86,8 +86,8 @@ importers:
 
 packages:
 
-  '@babylonjs/core@8.38.0':
-    resolution: {integrity: sha512-c2HnAbp21m9RHdkuand3iCQwfPsbI+srPNSgnzwplCicqlRDjvD0GkuJDE+z4yHlk+4DAZmhbs69meEP3xO/UQ==}
+  '@babylonjs/core@8.39.0':
+    resolution: {integrity: sha512-ohOpd3Cb+q59bgFdMaumxSgFSb9h4FeiY8vNFIkHwOCWGxvh8zbDnQEU5UJ5w7LgjIhbsm2IxVB2oKZ9/4Pb5w==}
 
   '@babylonjs/materials@8.38.0':
     resolution: {integrity: sha512-mi9pUcHRW8k9cA2qv5H6oPb2/HqSsVLEAtnBuKeBv2m0iYF6pw6+S/t+gLGsBhqkc9hdF2kHs9tNc9u6vm/nCQ==}
@@ -1594,11 +1594,11 @@ packages:
 
 snapshots:
 
-  '@babylonjs/core@8.38.0': {}
+  '@babylonjs/core@8.39.0': {}
 
-  '@babylonjs/materials@8.38.0(@babylonjs/core@8.38.0)':
+  '@babylonjs/materials@8.38.0(@babylonjs/core@8.39.0)':
     dependencies:
-      '@babylonjs/core': 8.38.0
+      '@babylonjs/core': 8.39.0
 
   '@esbuild/aix-ppc64@0.25.12':
     optional: true
