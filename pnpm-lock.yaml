@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.0.0
-        version: 8.39.2
+        specifier: ^8.39.3
+        version: 8.39.3
       '@babylonjs/materials':
         specifier: ^8.0.0
-        version: 8.39.2(@babylonjs/core@8.39.2)
+        version: 8.39.2(@babylonjs/core@8.39.3)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.3.3
@@ -54,7 +54,7 @@ importers:
         specifier: ^6.1.1
         version: 6.3.0
       prettier:
-        specifier: ^3.7.4
+        specifier: ^3.3.3
         version: 3.7.4
       prettier-plugin-svelte:
         specifier: ^3.2.7
@@ -86,8 +86,8 @@ importers:
 
 packages:
 
-  '@babylonjs/core@8.39.2':
-    resolution: {integrity: sha512-B2bqTDKy6S73mOzDCGP4yG3lwJ2asI+y09WR2CAhhIiILXpwcioDsB5oKakVexls/jVE1Djueja+bGM7gVViHw==}
+  '@babylonjs/core@8.39.3':
+    resolution: {integrity: sha512-SS0n8uHpSNr0xUQoynel1EYCw/4ZtgKOoWrlq7oxVNHJ+ssqcGviScJAZKayUzn75h5UtcZfRuBn/MCNk6c5IQ==}
 
   '@babylonjs/materials@8.39.2':
     resolution: {integrity: sha512-66ji/ktUHjj2CcGn25Cm/v9zQpYFRZNLyUNBI3G6m5ocb2y4QVL2KmxXIbzTdAVbEUSIk67nfNXIQGOONraMRg==}
@@ -1579,11 +1579,11 @@ packages:
 
 snapshots:
 
-  '@babylonjs/core@8.39.2': {}
+  '@babylonjs/core@8.39.3': {}
 
-  '@babylonjs/materials@8.39.2(@babylonjs/core@8.39.2)':
+  '@babylonjs/materials@8.39.2(@babylonjs/core@8.39.3)':
     dependencies:
-      '@babylonjs/core': 8.39.2
+      '@babylonjs/core': 8.39.3
 
   '@esbuild/aix-ppc64@0.25.12':
     optional: true
