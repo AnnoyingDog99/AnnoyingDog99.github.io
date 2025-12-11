@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@babylonjs/core':
-        specifier: ^8.0.0
-        version: 8.40.1
+        specifier: ^8.41.0
+        version: 8.41.0
       '@babylonjs/materials':
         specifier: ^8.0.0
-        version: 8.40.1(@babylonjs/core@8.40.1)
+        version: 8.40.1(@babylonjs/core@8.41.0)
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.3.3
@@ -60,7 +60,7 @@ importers:
         specifier: ^3.2.7
         version: 3.4.0(prettier@3.7.4)(svelte@5.45.8)
       sass:
-        specifier: ^1.96.0
+        specifier: ^1.79.4
         version: 1.96.0
       svelte:
         specifier: 5.45.8
@@ -86,8 +86,8 @@ importers:
 
 packages:
 
-  '@babylonjs/core@8.40.1':
-    resolution: {integrity: sha512-J//Wodlu1m1elh3cKZUh4HillxVc4QxgWyJxUABFYtr0kfSzk2vwJ5f9F3BvEq3X+XU8dEEK7i9buU1aV6w11A==}
+  '@babylonjs/core@8.41.0':
+    resolution: {integrity: sha512-zNXebahfCCjOu2VzHtE/EpAFSFnBnvYIK/iTgP1L18XbHJsDjyBPQNmuqYiSgP9pBj/Vkxr6AAZdnuqlHUB7BA==}
 
   '@babylonjs/materials@8.40.1':
     resolution: {integrity: sha512-ZAby3vDxSYcQ9bvFgQ9GvGtI4apcj/SGVoMrurbN1lJp2v5UcdBSsfNNSylehkUjKcXSgKbVlC2d0yOnD8PXYQ==}
@@ -1576,11 +1576,11 @@ packages:
 
 snapshots:
 
-  '@babylonjs/core@8.40.1': {}
+  '@babylonjs/core@8.41.0': {}
 
-  '@babylonjs/materials@8.40.1(@babylonjs/core@8.40.1)':
+  '@babylonjs/materials@8.40.1(@babylonjs/core@8.41.0)':
     dependencies:
-      '@babylonjs/core': 8.40.1
+      '@babylonjs/core': 8.41.0
 
   '@esbuild/aix-ppc64@0.25.12':
     optional: true
