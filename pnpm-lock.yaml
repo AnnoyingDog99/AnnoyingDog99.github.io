@@ -33,8 +33,8 @@ importers:
         specifier: ^6.0.0
         version: 6.2.4(svelte@5.49.1)(vite@7.3.1(sass@1.97.3))
       '@tsconfig/svelte':
-        specifier: ^5.0.4
-        version: 5.0.6
+        specifier: ^5.0.7
+        version: 5.0.7
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.7.0
         version: 8.54.0(@typescript-eslint/parser@8.54.0(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(typescript@5.9.3)
@@ -626,8 +626,8 @@ packages:
       svelte: ^5.0.0
       vite: ^6.3.0 || ^7.0.0
 
-  '@tsconfig/svelte@5.0.6':
-    resolution: {integrity: sha512-yGxYL0I9eETH1/DR9qVJey4DAsCdeau4a9wYPKuXfEhm8lFO8wg+LLYJjIpAm6Fw7HSlhepPhYPDop75485yWQ==}
+  '@tsconfig/svelte@5.0.7':
+    resolution: {integrity: sha512-NOtJF9LQnV7k6bpzcXwL/rXdlFHvAT9e0imrftiMc6/+FUNBHRZ8UngDrM+jciA6ENzFYNoFs8rfwumuGF+Dhw==}
 
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
@@ -1989,7 +1989,7 @@ snapshots:
       vite: 7.3.1(sass@1.97.3)
       vitefu: 1.1.1(vite@7.3.1(sass@1.97.3))
 
-  '@tsconfig/svelte@5.0.6': {}
+  '@tsconfig/svelte@5.0.7': {}
 
   '@types/chai@5.2.3':
     dependencies:
