@@ -13,7 +13,7 @@
 		</li>
 	</div>
 	{#if $page.url.pathname === path}
-		<div class="current" />
+		<div class="current"></div>
 	{/if}
 </a>
 

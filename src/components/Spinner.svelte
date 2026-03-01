@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="loader" />
+<div class="loader"></div>
 
 <style lang="scss">
 	.loader {

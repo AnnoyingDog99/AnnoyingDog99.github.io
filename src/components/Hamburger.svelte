@@ -2,10 +2,10 @@
 </script>
 
 <div class="bar">
-	<button class="hamburger-container" on:click>
-		<div class="hamburger-line" />
-		<div class="hamburger-line" />
-		<div class="hamburger-line" />
+	<button class="hamburger-container" on:click aria-label="hamburger menu">
+		<div class="hamburger-line"></div>
+		<div class="hamburger-line"></div>
+		<div class="hamburger-line"></div>
 	</button>
 </div>
 

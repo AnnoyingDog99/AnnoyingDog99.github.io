@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let width = '20em';
 	export let link = '';
-	export let type = '';
+	export let type: "button" | "submit" | "reset" = 'button';
 	export let target = '';
 </script>
 

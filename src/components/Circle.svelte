@@ -11,8 +11,12 @@
 		</div>
 	</div>
 
-	<div class="inner mid" />
-	<div class="inner bottom" />
+	<div class="inner mid">
+
+	</div>
+	<div class="inner bottom">
+		
+	</div>
 </div>
 
 <style lang="scss">

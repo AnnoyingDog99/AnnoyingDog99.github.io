@@ -8,9 +8,9 @@
 <div class="container">
 	<label for={label}>{label}</label>
 	{#if textarea}
-		<textarea rows="10" id={label} {name} bind:value />
+		<textarea rows="10" id={label} {name} bind:value></textarea>
 	{:else}
-		<input type="text" id={label} {name} bind:value />
+		<input type="text" id={label} {name} bind:value/>
 	{/if}
 </div>
 

@@ -52,7 +52,7 @@
 	>
 		<div class="container">
 			<h1>{title}</h1>
-			<div class="stripe" />
+			<div class="stripe"></div>
 			<div class="text">
 				<Input label="Name:" name="name" bind:value={name} />
 				<Input label="Email" name="email" bind:value={email} />
