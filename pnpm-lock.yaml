@@ -28,7 +28,7 @@ importers:
         version: 6.2.4(svelte@5.57.3(@typescript-eslint/types@8.72.2))(vite@8.1.6(sass@1.108.2))
       '@tsconfig/svelte':
         specifier: ^5.0.4
-        version: 5.0.8
+        version: 5.0.9
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.7.0
         version: 8.72.2(@typescript-eslint/parser@8.72.2(eslint@10.14.0)(typescript@7.0.2))(eslint@10.14.0)(typescript@7.0.2)
@@ -451,8 +451,8 @@ packages:
       svelte: ^5.0.0
       vite: ^6.3.0 || ^7.0.0
 
-  '@tsconfig/svelte@5.0.8':
-    resolution: {integrity: sha512-UkNnw1/oFEfecR8ypyHIQuWYdkPvHiwcQ78sh+ymIiYoF+uc5H1UBetbjyqT+vgGJ3qQN6nhucJviX6HesWtKQ==}
+  '@tsconfig/svelte@5.0.9':
+    resolution: {integrity: sha512-gbtbqsEFq9gFzGmgJMIB3+leXVmkUttoFjzeHsbqN6qFKst40fvxnN9+3Ajdl8VlIGwPevs9LNJ8YUhQgchqaw==}
 
   '@tybys/wasm-util@0.10.4':
     resolution: {integrity: sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A==}
@@ -1925,7 +1925,7 @@ snapshots:
       vite: 8.1.6(sass@1.108.2)
       vitefu: 1.1.2(vite@8.1.6(sass@1.108.2))
 
-  '@tsconfig/svelte@5.0.8': {}
+  '@tsconfig/svelte@5.0.9': {}
 
   '@tybys/wasm-util@0.10.4':
     dependencies:
