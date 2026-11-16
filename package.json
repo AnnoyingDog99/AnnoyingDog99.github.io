@@ -42,6 +42,6 @@
 	},
 	"type": "module",
 	"overrides": {
-		"cookie": "^1.0.0"
+		"cookie": "^2.0.0"
 	}
 }
